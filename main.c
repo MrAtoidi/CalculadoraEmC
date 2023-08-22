@@ -10,7 +10,6 @@ int main()
     bool subtracao = false;
     bool multiplicacao = false;
     bool divisao = false;
-    bool introducao = true;
 
     // Mensagens de boas vindas
 
@@ -143,5 +142,3 @@ int main()
         }
     }
 }
-// A
-//b
