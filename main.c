@@ -10,7 +10,6 @@ int main()
     bool subtracao = false;
     bool multiplicacao = false;
     bool divisao = false;
-    bool introducao = true;
 
     // Mensagens de boas vindas
 
@@ -22,56 +21,124 @@ int main()
 
     int escolha;
     scanf("%d", &escolha);
-    switch (escolha)
+
+    // Adição
+    if (escolha == 1)
     {
-    case 1:
-        soma = true;
-        introducao = false;
-        break;
-    case 2:
-        subtracao = true;
-        introducao = false;
-        break;
-    case 3:
-        multiplicacao = true;
-        introducao = false;
-        break;
-    case 4:
-        divisao = true;
-        introducao = false;
-        break;
-    default:
-        printf("ERRO: Escolha inválida!\n\nReinicie o processo.");
-        break;
+        while (divisao = true)
+        {
+            printf("---------------------------------\n|            ADIÇÃO           |\n---------------------------------\n");
+
+            float primeiroNum;
+            printf("Insira o primeiro dígito: ");
+            if (!scanf("%f", &primeiroNum) == 1)
+            {
+                printf("ERRO: Você deve inserir um número.\n\nReinicie o processo.");
+                break;
+            }
+
+            float segundoNum;
+            printf("Insira o segundo dígito: ");
+            if (!scanf("%f", &segundoNum) == 1)
+            {
+                printf("ERRO: Você deve inserir um número.\n\nReinicie o processo.");
+                break;
+            }
+
+            float resultado = primeiroNum + segundoNum;
+
+            printf("Resultado: %.2f", resultado);
+            break;
+        }
     }
 
-    // Inicia o processo de divisão
-
-    while (divisao = true)
+    // Subtração
+    else if (escolha == 2)
     {
-        printf("---------------------------------\n|            DIVISÃO           |\n---------------------------------\n");
-
-        float primeiroNum;
-        printf("Insira o primeiro dígito: ");
-        if (!scanf("%f", &primeiroNum) == 1)
+        while (subtracao = true)
         {
-            printf("ERRO: Você deve inserir um número.\n\nReinicie o processo.");
+            printf("---------------------------------\n|            SUBTRAÇÃO           |\n---------------------------------\n");
+
+            float primeiroNum1;
+            printf("Insira o primeiro dígito: ");
+            if (!scanf("%f", &primeiroNum1) == 1)
+            {
+                printf("ERRO: Você deve inserir um número.\n\nReinicie o processo.");
+                break;
+            }
+
+            float segundoNum1;
+            printf("Insira o segundo dígito: ");
+            if (!scanf("%f", &segundoNum1) == 1)
+            {
+                printf("ERRO: Você deve inserir um número.\n\nReinicie o processo.");
+                break;
+            }
+
+            float resultado1 = primeiroNum1 - segundoNum1;
+
+            printf("Resultado: %.2f", resultado1);
             break;
         }
+    }
 
-        float segundoNum;
-        printf("Insira o segundo dígito: ");
-        if (!scanf("%f", &segundoNum) == 1)
+    // Multiplicação
+    else if (escolha == 3)
+    {
+        while (divisao = true)
         {
-            printf("ERRO: Você deve inserir um número.\n\nReinicie o processo.");
+            printf("---------------------------------\n|         MULTIPLICAÇÃO        |\n---------------------------------\n");
+
+            float primeiroNum;
+            printf("Insira o primeiro dígito: ");
+            if (!scanf("%f", &primeiroNum) == 1)
+            {
+                printf("ERRO: Você deve inserir um número.\n\nReinicie o processo.");
+                break;
+            }
+
+            float segundoNum;
+            printf("Insira o segundo dígito: ");
+            if (!scanf("%f", &segundoNum) == 1)
+            {
+                printf("ERRO: Você deve inserir um número.\n\nReinicie o processo.");
+                break;
+            }
+
+            float resultado = primeiroNum * segundoNum;
+
+            printf("Resultado: %.2f", resultado);
             break;
         }
+    }
 
-        float resultado = primeiroNum / segundoNum;
+    // Divisão
+    else if (escolha == 4)
+    {
+        while (divisao = true)
+        {
+            printf("---------------------------------\n|            DIVISÃO           |\n---------------------------------\n");
 
-        printf("Resultado: %.2f", resultado);
-        break;
+            float primeiroNum;
+            printf("Insira o primeiro dígito: ");
+            if (!scanf("%f", &primeiroNum) == 1)
+            {
+                printf("ERRO: Você deve inserir um número.\n\nReinicie o processo.");
+                break;
+            }
+
+            float segundoNum;
+            printf("Insira o segundo dígito: ");
+            if (!scanf("%f", &segundoNum) == 1)
+            {
+                printf("ERRO: Você deve inserir um número.\n\nReinicie o processo.");
+                break;
+            }
+
+            float resultado = primeiroNum / segundoNum;
+
+            printf("Resultado: %.2f", resultado);
+            break;
+        }
     }
 }
-// A
-//b
