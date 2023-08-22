@@ -22,6 +22,11 @@ int main()
     int escolha;
     scanf("%d", &escolha);
 
+    // Numeros
+
+    float primeiroNum;
+    float segundoNum;
+
     // Adição
     if (escolha == 1)
     {
@@ -29,7 +34,6 @@ int main()
         {
             printf("---------------------------------\n|            ADIÇÃO           |\n---------------------------------\n");
 
-            float primeiroNum;
             printf("Insira o primeiro dígito: ");
             if (!scanf("%f", &primeiroNum) == 1)
             {
@@ -37,7 +41,6 @@ int main()
                 break;
             }
 
-            float segundoNum;
             printf("Insira o segundo dígito: ");
             if (!scanf("%f", &segundoNum) == 1)
             {
@@ -59,25 +62,23 @@ int main()
         {
             printf("---------------------------------\n|            SUBTRAÇÃO           |\n---------------------------------\n");
 
-            float primeiroNum1;
             printf("Insira o primeiro dígito: ");
-            if (!scanf("%f", &primeiroNum1) == 1)
+            if (!scanf("%f", &primeiroNum) == 1)
             {
                 printf("ERRO: Você deve inserir um número.\n\nReinicie o processo.");
                 break;
             }
 
-            float segundoNum1;
             printf("Insira o segundo dígito: ");
-            if (!scanf("%f", &segundoNum1) == 1)
+            if (!scanf("%f", &segundoNum) == 1)
             {
                 printf("ERRO: Você deve inserir um número.\n\nReinicie o processo.");
                 break;
             }
 
-            float resultado1 = primeiroNum1 - segundoNum1;
+            float resultado = primeiroNum - segundoNum;
 
-            printf("Resultado: %.2f", resultado1);
+            printf("Resultado: %.2f", resultado);
             break;
         }
     }
@@ -89,7 +90,6 @@ int main()
         {
             printf("---------------------------------\n|         MULTIPLICAÇÃO        |\n---------------------------------\n");
 
-            float primeiroNum;
             printf("Insira o primeiro dígito: ");
             if (!scanf("%f", &primeiroNum) == 1)
             {
@@ -97,7 +97,6 @@ int main()
                 break;
             }
 
-            float segundoNum;
             printf("Insira o segundo dígito: ");
             if (!scanf("%f", &segundoNum) == 1)
             {
@@ -119,7 +118,6 @@ int main()
         {
             printf("---------------------------------\n|            DIVISÃO           |\n---------------------------------\n");
 
-            float primeiroNum;
             printf("Insira o primeiro dígito: ");
             if (!scanf("%f", &primeiroNum) == 1)
             {
@@ -127,7 +125,7 @@ int main()
                 break;
             }
 
-            float segundoNum;
+            
             printf("Insira o segundo dígito: ");
             if (!scanf("%f", &segundoNum) == 1)
             {
